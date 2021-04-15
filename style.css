@@ -1,0 +1,151 @@
+:root{
+    --color1: #FFAE00;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url("Fonts/league-spartan/LeagueSpartan-Bold.otf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/roboto/Roboto-Regular.ttf");
+}
+
+body{
+    font-family: 'Roboto','Trebuchet MS';
+    min-width: 1055px;
+    max-width: 1060px;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(73, 72, 72, 0.8), rgba(255, 255, 255, 0.8)), url("Img/back_head.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+img{
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 100px);
+    top: -100px;
+    right: auto;
+}
+
+.head_cv{
+    padding-left: 40%;
+    padding-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "League Spartan";
+}
+
+h1 {
+    color: var(--color1);
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: white;
+    margin-top: 0;
+    word-spacing: 5px;
+}
+
+h3{
+    text-transform: uppercase;
+    color: var(--color1);
+    font-family: "League Spartan";
+}
+
+ul{
+    padding-left: 15px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+.side_left, .side_right{
+    box-sizing: border-box;
+    position: relative;
+    height: 710px;
+    padding-left: 15px;
+}
+
+.side_left{
+    background-color: #F5F5F5;
+    width: 40%;
+    display: inline-block;
+    padding-top: 100px;
+    
+}
+
+ul.civil{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.loisirs{
+    list-style-type: '-   ';
+    column-count: 2; 
+}
+
+.side_right{
+    float: right;
+    width: 60%;
+}
+
+footer{
+    background-color: var(--color1);
+    height: 50px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        min-width: 0;
+        max-width: none;
+        width: 620px;
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+        left: calc(50% - 50px);
+        top: -50px;
+
+    }
+    
+    .head_cv{
+        text-align: center;
+        padding-left: initial;
+    }
+
+    .side_left, .side_right{
+        width: 620px;
+        padding-right: 15px;
+    }
+
+    .side_left{
+        padding-top: 50px;
+        
+    }
+
+    .side_right{
+        float: none;
+    }
+}
